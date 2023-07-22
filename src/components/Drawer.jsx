@@ -55,8 +55,8 @@ const Drawer = ({ isOpen, onClose }) => {
 
       <div className="fixed h-auto w-full top-0 bg-white shadow-lg p-4 ">
         <AiOutlineClose size={24} onClick={onClose} className='cursor-pointer absolute top-2 right-2' />
-        <div className='flex flex-row gap-0.5 justify-between mt-6'>
-          <div className='flex flex-col gap-y-2 flex-1'>
+        <div className='flex flex-col md:flex-row gap-0.5 justify-between mt-6'>
+          <div className='flex flex-col  gap-y-2 flex-1'>
             <div className='px-4 py-2 shadow-md flex flex-col gap-y-2 bg-white rounded-md'>
               <h3 className='font-bold text-sm'>Location</h3>
               <span className='text-xs font-medium text-neutral-600'>{filterKey.city ? filterKey.city : 'Helsinki, Finland'}</span>

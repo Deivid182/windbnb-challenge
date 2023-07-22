@@ -1,11 +1,12 @@
 import Container from './components/Container'
+import Footer from './components/Footer'
 import Navbar from './components/Navbar'
 import StayCard from './components/StayCard'
 import { useApp } from './hooks/useApp'
 
 const App = () => {
 
-  const { initialStays, filterKey, filteredStays } = useApp()
+  const { initialStays, filteredStays } = useApp()
 
   return (
     <>
@@ -33,6 +34,7 @@ const App = () => {
             ))
           )}
         </div>
+        <Footer />
       </Container>
     </>
   )
